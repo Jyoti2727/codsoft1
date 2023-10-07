@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>portfolio website</title>
+    <script defer src="index.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(185, 170, 170);
+        color: white;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(92, 92, 175);
+      }
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+      nav ul li a:hover {
+        color:black;
+      }
+
+      .left {
+        font-size: 2rem;
+      }
+      .firstsection {
+        display: flex;
+        justify-content: space-around;
+        margin: 130px 0;
+        height: 250px;
+      }
+      .firstsection > div {
+        width: 30%;
+      }
+      .leftsection {
+        font-size: 3.2rem;
+      }
+      .rightsection img {
+        width: 80%;
+        margin: 3px;
+        border-radius: 80px;
+      }
+      .purple {
+        color: rgb(25, 5, 44);
+      }
+      .text-grey {
+        color: grey;
+      }
+      .secondsection {
+        max-width: 80vw;
+        margin: auto;
+        height: 80vh;
+      }
+      .container {
+        width: 100%;
+        background-color: azure;
+        border-radius: 50px;
+      }
+      .skills {
+        text-align: right;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+      }
+
+      .html {
+        width: 80%;
+        background-color: rgb(40, 40, 109);
+        border-radius: 50px;
+      }
+      .css {
+        width: 60%;
+        background-color: rgb(40, 40, 109);
+        border-radius: 50px;
+      }
+      .Javascript {
+        width: 50%;
+        background-color: rgb(40, 40, 109);
+        border-radius: 50px;
+      }
+      .skills {
+        display: flex;
+        justify-content: center;
+      }
+      .skills_container {
+        margin: 2px;
+        padding: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+
+      .box {
+        height: 500px;
+        width: 380px;
+        margin: 2px;
+        padding: 2px;
+      }
+
+      #about_heading {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: black;
+        height: 60px;
+      }
+      #about_image {
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+      #about_paragraph {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 60px;
+        color: navy;
+      }
+      .third_section_for_height{
+        height:550px;
+      
+
+      }
+      
+      .card {
+        width: 300px;
+        background-color: #fff;
+        box-shadow: 0 5px 32px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        overflow: hidden;
+        margin: 20px;
+      }
+
+      .card img {
+        width: 100%;
+        height: 180px;
+      }
+
+      .card-content {
+        padding: 20px;
+        position: relative;
+      }
+
+      .card h2 {
+        font-size: 1.5rem;
+        margin: 0;
+      }
+
+      .card p {
+        font-size: 1rem;
+        color: #777;
+        /* font-family: "Mulish", sans-serif; */
+      }
+
+      .card a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #3498db;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+
+      #poject {
+        padding: 2rem;
+      
+      }
+      #project-button {
+        color: #3498db;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 10px;
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #3498db;
+        font-size: medium;
+      }
+      #project-button:hover {
+        background-color: #3498db;
+        color: #ffffff;
+      }
+
+      .project-card {
+        display: flex;
+        justify-content: center;
+        margin: 58px;
+      }
+      .footer {
+  background-color:  rgb(92, 92, 175);  
+  align-items: center;
+}
+.row {
+  display: flex;
+}
+.footer {
+  padding: 50px 0;
+}
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+.icon {
+  width: 53%;
+  height: 36%;
+  transition: all 0.3s linear;
+}
+
+a:hover .icon {
+  transform: scale(1.5);
+}
+.footer-col h4 {
+  font-size: 18px;
+  font-family: "EB Garamond", serif;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  padding-left: 40px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.footer-col ul li a {
+  font-size: 16px;
+  font-family: "EB Garamond", serif;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+}
+
+.r {
+  color: #ffffff;
+  width: 40%;
+  padding-left: 70px;
+}
+.social-links {
+  display: inline-flex;
+  padding: 17px;
+  margin: 2px;
+}
+.links {
+  width: 58px;
+  height: 83px;
+}
+.location {
+  margin-top: 20px;
+}
+.heading {
+  font: size 20%;
+  font-family: "EB Garamond", serif;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  padding: 33px;
+}
+.address {
+  color: white;
+  display: inline-table;
+  font-family: "Mulish", sans-serif;
+}
+.contact {
+  color: white;
+}
+.contact h1 {
+  padding-right: 51px;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+}
+#footer_contact{
+  color:black;
+}
+
+    </style>
+  </head>
+  <body>
+    <!--nav bar-->
+
+    <header>
+      <nav>
+        <div class="left" style="color:black">Jyoti's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Services</a></li>
+            <li><a href="/">Projects</a></li>
+            <li><a href="/">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!---first section-->
+    <section class="firstsection">
+      <div class="leftsection">
+        Hi,I am <span class="purple"> Jyoti</span>
+
+        <div>and I am learning</div>
+        <div>Web Development</div>
+      </div>
+      <div class="rightsection">
+        <img src="image1.jpg" height="350px" width="360px" ; alt="image" />
+      </div>
+    </section>
+    <hr />
+
+    <!--second section-->
+    <div class="skills_container">
+      <div class="box" id="box1">
+        <section>
+          <div id="about_heading">
+            <h1 style="text-align: center; font-size: 40px">ABOUT ME</h1>
+          </div>
+          <div id="about_image">
+            <img
+              src="imagetwo.jpg"
+              height="250px"
+              width="290px"
+              ;
+              alt="image"
+            />
+          </div>
+          <div id="about_paragraph">
+            My name is JYOTI JOSHI . Completed my graduation in Bachelor of
+            Science. And currently pursuing my master's degree in Master of
+            Computer Applications .Interested in designing and development.
+          </div>
+        </section>
+      </div>
+
+      <div class="box" id="box2">
+        <section class="secondsection">
+          <div class="skills">
+            <h1 style="font-size: 40px; color: black">MY SKILLS</h1>
+          </div>
+
+          <br />
+          <br />
+          <div>
+            <p style="color: navy">
+              Having an knowledge of HTML ,CSS and JAVASCRIPT. I can create
+              basic websites and layouts with the help of HTML , CSS and
+              JAVASCRIPT.
+            </p>
+          </div>
+          <br />
+          <br />
+          <div></div>
+          <div>
+            <p style="color: black">HTML</p>
+          </div>
+
+          <div class="container">
+            <div class="skills html">80%</div>
+          </div>
+          <br />
+
+          <div><p style="color: black">CSS</p></div>
+
+          <div class="container">
+            <div class="skills css">60%</div>
+          </div>
+          <br />
+
+          <div><p style="color: black">JAVASCRIPT</p></div>
+
+          <div class="container">
+            <div class="skills Javascript">50%</div>
+          </div>
+          <br />
+        </section>
+      </div>
+    </div>
+    <hr />
+    <!--third section-->
+    <section id="project" class="third_section_for_height">
+      <h1 style="font-size: 2rem; padding-top: 2rem; text-align: center;color: black;">PROJECTS</h1>
+      <div class="project-card">
+        <div class="card">
+          <img src="to.png" alt="Card Image" />
+          <div class="card-content">
+            <h2>TO-DO LIST</h2>
+            <p>
+              This is the TO-DO LIST that I created with the help of Html and
+              CSS and JavaScript.
+            </p>
+
+            <button
+              id="project-button"
+              onclick="location.href ='https://jyoti2727.github.io/codsoft2/' "
+            >
+              Live demo
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="calculator.png" alt="Card Image" />
+          <div class="card-content">
+            <h2>Calculator</h2>
+            <p>
+              This is the Calculator that I created with the help of Html,Css
+              and JavaScript.
+            </p>
+
+            <button
+              id="project-button"
+              onclick="location.href ='https://jyoti2727.github.io/codsoft3/' "
+            >
+              Live demo
+            </button>
+          </div>
+        </div>
+        <div class="card">
+          <img src="landing page.jpeg" alt="Card Image" />
+          <div class="card-content">
+            <h2>Landing Page</h2>
+            <p>
+              This is the Landing Page that I created with the help of HTML and
+              CSS.
+            </p>
+            <button
+              id="project-button"
+              onclick="location.href ='https://jyoti2727.github.io/landing-page/' "
+            >
+              Live demo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+
+    <footer>
+      <section id="footer">
+        <footer class="footer">
+            <div class="contact-info">
+                <div class="contact">
+                    <h1 id="footer_contact">CONTACT ME</h1>
+                    <div class="address">
+                        <h2>Address:</h2>
+                        <p>Ramnagar</p>
+                        <p>Naintal</p>
+                        <p>Uttarakhand</p>
+                        <p>Contact-no: +91 XXXXXXXX37</p>
+                    </div>
+                    <div class=" social-links">
+                        <a href="mailto:jyotijoshi2727@gmail.com" class="links">
+                            <img class="icon" src="gmailimg.png">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jyoti-joshi-b83620258/" class="links">
+                            <img class="icon" src="linkdinimg.png">
+                        </a>
+
+                        <a href="https://instagram.com/jyoti_joshi_27?igshid=MzMyNGUyNmU2YQ==" class="links">
+                            <img class="icon" src="instaimg.png">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100019285472994&mibextid=9R9pXO" class="links">
+                            <img class="icon" src="fbimage.png">
+                        </a>
+                        <a href="https://github.com/Jyoti2727" class="links">
+                            <img class="icon" src="githubimg.png">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+        
+    </footer>
+  </body>
+</html>
